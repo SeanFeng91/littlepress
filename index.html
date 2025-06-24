@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【启航邀请】让我们共同建造一个精神角落</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #121212; /* 深邃的炭黑色背景 */
+            color: #E0E0E0;
+        }
+        .font-serif {
+            font-family: 'Noto Serif SC', serif;
+        }
+        .card-container {
+            max-width: 900px;
+            margin: 4rem auto;
+            background-color: #1F1F1F; /* 比背景稍亮的炭灰色卡片 */
+            border-radius: 0.5rem; /* 更锐利的直角边缘 */
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+        .header-image {
+            height: 22rem;
+            /* 一张更具象征意义、关于结构与迷失的图片 */
+            background-image: url('https://images.unsplash.com/photo-1554147090-e1221a04a025?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .header-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(to top, rgba(31,31,31,1) 5%, rgba(31,31,31,0.2) 60%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: left;
+            padding: 2.5rem;
+        }
+        .content-padding {
+            padding: 2.5rem 3.5rem;
+        }
+        h1, h2, h3 {
+            font-family: 'Noto Serif SC', serif;
+        }
+        .section-divider {
+            border-top: 1px solid #444;
+            margin: 3.5rem 0;
+        }
+        .placeholder {
+            background-color: #333;
+            padding: 0.2rem 0.6rem;
+            border-radius: 0.25rem;
+            font-weight: 500;
+            color: #FFD700; /* 醒目的金色作为强调色 */
+            display: inline-block;
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        .book-cover {
+            box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+            border-radius: 0.25rem;
+            transition: transform 0.3s ease;
+            border: 1px solid #444;
+        }
+        .book-cover:hover {
+            transform: translateY(-5px) scale(1.03);
+        }
+        .mode-card {
+             background-color: #282828;
+             border: 1px solid #444;
+             padding: 2rem;
+             border-radius: 0.5rem;
+        }
+        .list-item::before {
+            content: '—';
+            margin-right: 1rem;
+            color: #666;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .card-container {
+                margin: 1rem;
+                border-radius: 0.25rem;
+            }
+            .content-padding {
+                padding: 1.5rem;
+            }
+            .header-image {
+                height: 18rem;
+            }
+            .header-overlay {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- 主邀请卡片容器 -->
+    <div class="card-container">
+        <!-- 顶部图片和标题 -->
+        <header class="header-image">
+            <div class="header-overlay">
+                <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight">【启航邀请】</h1>
+                <p class="text-xl md:text-2xl font-light text-gray-300 mt-2">让我们共同建造一个精神角落</p>
+            </div>
+        </header>
+
+        <!-- 邀请函主体内容 -->
+        <main class="content-padding">
+
+            <section>
+                <h2 class="text-2xl font-serif text-gray-200 mb-6">嘿，亲爱的大忙人：</h2>
+                <div class="space-y-4 text-gray-300 leading-relaxed font-light">
+                    <p>你是否也曾有过这样的瞬间？在深夜的办公桌前，在拥挤的地铁里，在无尽的会议中，突然感到一丝茫然——我们所做的，究竟有什么意义？</p>
+                    <p>我们渴望<strong class="font-medium text-gray-100">真实</strong>，渴望<strong class="font-medium text-gray-100">深度</strong>，渴望与人产生<strong class="font-medium text-gray-100">有温度的联结</strong>，但这些似乎都成了奢侈品。</p>
+                    <p>所以，我想发出的，不仅是一次聚会的邀请，更是一份构建一个长期<strong class="font-medium text-gray-100">“精神角落”</strong>的邀约。我们想共同创造一个可以暂时“离线”，回归真实感受的场域。在这里，我们将以书籍为船，思想为帆，每月启航一次，去探索那些平日里被信息洪流淹没的精神海域。</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- 第一期启航 -->
+            <section>
+                <div class="text-center">
+                    <h2 class="text-3xl font-serif text-gray-100 tracking-tight">第一期启航：不工作，我们还能做什么？</h2>
+                    <p class="max-w-3xl mx-auto mt-4 text-gray-400 font-light">我们花费生命中最宝贵的时间去“工作”，换来的报酬用以“消费”，却似乎离真正的“生活”越来越远。在机器与算法日益强大的今天，我们作为“人”的价值究竟何在？</p>
+                </div>
+
+                <div class="mt-12">
+                    <h3 class="text-xl font-serif text-center text-gray-200 mb-8">本期共读</h3>
+                    <div class="flex flex-col md:flex-row justify-center items-start gap-10 md:gap-16">
+                        <div class="text-center w-full md:w-auto">
+                            <img src="https://img3.doubanio.com/view/subject/l/public/s34063001.jpg" alt="《毫无意义的工作》封面" class="w-40 h-auto book-cover mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/160x220/333333/E0E0E0?text=毫无意义的工作';">
+                            <p class="mt-4 font-semibold text-gray-200 text-sm">《毫无意义的工作》</p>
+                            <p class="text-xs text-gray-500">大卫·格雷伯</p>
+                        </div>
+                        <div class="text-center w-full md:w-auto">
+                            <img src="https://img1.doubanio.com/view/subject/l/public/s33973619.jpg" alt="《工作、消费主义和新穷人》封面" class="w-40 h-auto book-cover mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/160x220/333333/E0E0E0?text=工作、消费主义和新穷人';">
+                            <p class="mt-4 font-semibold text-gray-200 text-sm">《工作、消费主义和新穷人》</p>
+                            <p class="text-xs text-gray-500">齐格蒙·鲍曼</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16 grid md:grid-cols-3 gap-6 text-sm text-center">
+                    <div class="border border-gray-700/50 rounded-md p-4 bg-gray-900/20">
+                        <h4 class="font-semibold text-gray-300 mb-2">时间</h4>
+                        <p class="text-gray-400"><span class="placeholder">具体日期</span>，周六/日下午 2:00 - 5:00</p>
+                    </div>
+                    <div class="border border-gray-700/50 rounded-md p-4 bg-gray-900/20">
+                        <h4 class="font-semibold text-gray-300 mb-2">地点</h4>
+                        <p class="text-gray-400">一个安静的场所 <span class="placeholder">待定</span></p>
+                    </div>
+                    <div class="border border-gray-700/50 rounded-md p-4 bg-gray-900/20">
+                        <h4 class="font-semibold text-gray-300 mb-2">人数</h4>
+                        <p class="text-gray-400">3-6人（深度，而非广度）</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+             <!-- 你需要做的 -->
+             <section>
+                 <h2 class="text-2xl font-serif text-center text-gray-100 mb-8">航行准备</h2>
+                 <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-gray-300">
+                    <div class="text-center">
+                        <h4 class="font-serif text-lg text-gray-100">阅读</h4>
+                        <p class="mt-1 text-sm font-light text-gray-400">至少读完其中一本，两本都读完会带来更奇妙的化学反应。</p>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="font-serif text-lg text-gray-100">思考</h4>
+                        <p class="mt-1 text-sm font-light text-gray-400">带着你的疑问、触动和思考来到现场。</p>
+                    </div>
+                     <div class="text-center">
+                        <h4 class="font-serif text-lg text-gray-100">准备</h4>
+                        <p class="mt-1 text-sm font-light text-gray-400">带上一支笔、笔记本和一颗开放真诚的心。</p>
+                    </div>
+                 </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- 附录：活动策划方案 -->
+    <div class="card-container -mt-12">
+        <div class="content-padding">
+            <h2 class="text-3xl font-serif text-center text-gray-100 mb-4 tracking-tight">我们的航线</h2>
+            <p class="text-center text-gray-400 font-light mb-12">我们准备了两种探索模式，最终形式可由当期主理人与参与者共同决定。</p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 模式一 -->
+                <div class="mode-card">
+                    <h3 class="font-serif text-xl text-amber-300 mb-1">模式一：结构化深潜</h3>
+                    <p class="text-sm text-gray-400 mb-6 font-light">回归思辨本身，通过严谨的流程，层层深入议题核心。</p>
+                    <div class="space-y-4 text-gray-300">
+                        <div class="list-item"><strong class="font-medium text-gray-200">破冰与沉浸 (30分钟):</strong> 通过“放下仪式”与“无意义故事会”建立安全、专注的场域。</div>
+                        <div class="list-item"><strong class="font-medium text-gray-200">思想的碰撞 (90分钟):</strong> 运用“核心概念卡牌”与“‘意义’的光谱”等环节，将理论与个人经验结合，引发深度交锋。</div>
+                        <div class="list-item"><strong class="font-medium text-gray-200">创造与升华 (60分钟):</strong> 在“反-狗屁工作”设计环节中将批判引向构建，并以“带走一句话”沉淀收获。</div>
+                    </div>
+                </div>
+
+                <!-- 模式二 -->
+                <div class="mode-card">
+                    <h3 class="font-serif text-xl text-cyan-300 mb-1">模式二：游戏化冒险</h3>
+                    <p class="text-sm text-gray-400 mb-6 font-light">将深刻的议题解构于游戏之中，在轻松的氛围里激发别样火花。</p>
+                     <div class="space-y-4 text-gray-300">
+                        <div class="list-item"><strong class="font-medium text-gray-200">“工作身份卡”：</strong>角色扮演，审视我们对不同职业的预设与偏见。</div>
+                        <div class="list-item"><strong class="font-medium text-gray-200">“价值观拍卖会”：</strong>模拟竞拍，揭示内心深处真正的价值排序。</div>
+                        <div class="list-item"><strong class="font-medium text-gray-200">“消费主义诊断室”：</strong>将书本理论应用于现实，诊断当代人的消费困境。</div>
+                        <div class="list-item"><strong class="font-medium text-gray-200">“理想社会设计大会”：</strong>从批判走向构建，将思考转化为创造性的蓝图。</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16">
+                 <p class="text-lg font-serif text-gray-200">期待与你一起，开启我们的第一次思想远航。</p>
+                 <div class="text-right mt-6 text-gray-500 text-sm">
+                    <p>第一期主理人：<span class="placeholder">[你的名字]</span></p>
+                    <p class="mt-1"><span class="placeholder">[日期]</span></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

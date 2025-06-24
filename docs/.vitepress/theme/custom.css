@@ -1,0 +1,121 @@
+/* 自定义样式 */
+
+/* 优化中文字体显示 */
+:root {
+  --vp-font-family-base: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --vp-font-family-mono: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", "Source Code Pro", monospace;
+}
+
+/* 首页hero区域优化 */
+.VPHero .VPImage {
+  opacity: 0.8;
+}
+
+/* 特色卡片样式优化 */
+.VPFeature {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.VPFeature:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* 活动状态提示框 */
+.custom-block.info {
+  border-left: 4px solid #3eaf7c;
+  background-color: rgba(62, 175, 124, 0.1);
+}
+
+/* 书籍封面图片样式 */
+img[alt*="毫无意义的工作"],
+img[alt*="工作、消费主义和新穷人"] {
+  max-width: 160px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+img[alt*="毫无意义的工作"]:hover,
+img[alt*="工作、消费主义和新穷人"]:hover {
+  transform: scale(1.05);
+}
+
+/* 表格样式优化 */
+table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 导航栏样式 */
+.VPNav {
+  backdrop-filter: blur(10px);
+}
+
+/* 侧边栏样式 */
+.VPSidebar {
+  border-right: 1px solid var(--vp-c-divider);
+}
+
+/* 内容区域优化 */
+.VPContent {
+  padding-top: 2rem;
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+  .VPHero h1 {
+    font-size: 2rem;
+  }
+  
+  .VPHero .text {
+    font-size: 1.2rem;
+  }
+  
+  .VPFeatures {
+    padding: 0 1rem;
+  }
+}
+
+/* 深色模式优化 */
+.dark img[alt*="毫无意义的工作"],
+.dark img[alt*="工作、消费主义和新穷人"] {
+  filter: brightness(0.9);
+}
+
+/* 链接样式 */
+a {
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+
+a:hover {
+  border-bottom-color: var(--vp-c-brand-1);
+}
+
+/* 引用样式 */
+blockquote {
+  border-left: 4px solid var(--vp-c-brand-1);
+  background-color: var(--vp-c-bg-soft);
+  padding: 1rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+/* 代码块样式 */
+.vp-code-group {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* 页面底部样式 */
+.VPDocFooter {
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 2rem;
+  margin-top: 3rem;
+} 
