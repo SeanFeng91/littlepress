@@ -4,9 +4,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,7 +14,7 @@
   "license": "ISC",
   "description": "LittlePress读书会 - 共同建造一个精神角落",
   "devDependencies": {
-    "vitepress": "^1.0.0",
+    "vitepress": "^1.6.3",
     "vue": "^3.4.0"
   }
 }

@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'LittlePress读书会',
+  title: '启航读书会',
   description: '共同建造一个精神角落',
   lang: 'zh-CN',
   
@@ -29,7 +29,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: '让我们共同建造一个精神角落',
+      message: '启航读书会 - 让我们共同建造一个精神角落',
       copyright: 'Copyright © 2024-present'
     },
 
